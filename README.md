@@ -4,7 +4,7 @@ it is a simple program.
 Maybe some improvments will happen in future.
 
 ## live version 
-[live MarkDown Previewer](https://facebook.github.io/create-react-app/docs/running-tests)
+[live MarkDown Previewer](https://markdown-previewer--ahmadali5.repl.co/)
 
 ## Instructions: 
 <pre>
