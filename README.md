@@ -7,6 +7,7 @@ Maybe some improvments will happen in future.
 [live MarkDown Previewer](https://facebook.github.io/create-react-app/docs/running-tests)
 
 ## Instructions: 
+<pre>
 <ul>
 <li> > type your text in the upper box </li>
 <li>> type each expression in a seperate line </li>
@@ -17,3 +18,5 @@ Maybe some improvments will happen in future.
 <li>> use ` for code tag ex: ˋlet x; `  => <code> let x; </code></li>
 <li>> use [] for link tag ex: [google]  => <a href="https://www.google.com">google</a></li>
 <li>> use ![] for image tag ex: [img_url]  => <img src="img_url" alt="<img src='img_url'/>"/></li>
+</ul>
+</pre>
