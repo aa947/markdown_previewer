@@ -20,3 +20,18 @@
 .App-link {
   color: #09d3ac;
 }
+
+textarea{
+
+  display: block;
+
+}
+#out{
+  border: 2px solid green;
+  border-radius:5px 5px;
+  width:100%;
+  background-color:floralwhite;
+  color:black;
+  text-align: left;
+  padding: 2% 2%;
+}

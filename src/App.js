@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import MarkDown from './markDown';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p> Simple Mark Down Previewer </p>
+      <MarkDown  />
+
       </header>
     </div>
   );
