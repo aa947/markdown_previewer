@@ -35,3 +35,7 @@ textarea{
   text-align: left;
   padding: 2% 2%;
 }
+
+h1 , h2 {
+  text-align: left;
+}
