@@ -25,6 +25,7 @@ class MarkDown extends React.Component {
    this.convert_to_html = this.convert_to_html.bind(this);
    this.handleChange = this.handleChange.bind(this);
    this.instructions = this.instructions.bind(this);
+  this.empty = this.empty.bind(this);
 
 }
 
@@ -44,19 +45,19 @@ convert_to_html (){
      //   console.log(str);
         let med_str;
         if(str[0]==='*'){
-         med_str = '<h1>'+str.slice(1,-1)+'</h1>';
+         med_str = '<h1>'+str.slice(1)+'</h1>';
         }
         else if (str.slice(0,2)==='##'){
-            med_str = '<h4>' + str.slice(2,-1)+'</h4>'
+            med_str = '<h4>' + str.slice(2)+'</h4>'
         }
         else if (str.slice(0,9)==='$$strong$$'){
-            med_str = '<strong>' + str.slice(9,-1)+'</strong>'
+            med_str = '<strong>' + str.slice(9)+'</strong>'
         }
         else if (str.slice(0,9)==='$$italic$$'){
-            med_str = '<em>' + str.slice(9,-1)+'</em>'
+            med_str = '<em>' + str.slice(9)+'</em>'
         }
         else if (str[0]==='`'){
-            med_str = '<code>' + str.slice(1,-2)+'<code>'
+            med_str = '<code>' + str.slice(1,-1)+'<code>'
         }
         else if (str[0]==='['){
             med_str = '<a href="https://www.' +str.slice(1,-1)+'.com">'+str.slice(1,-1)+'</a>'
@@ -85,8 +86,19 @@ convert_to_html (){
 }
 
 instructions(){
-    return this.setState({
-        output: docs
+  //$('#out').empty();  
+  //$('#out').append('<pre>'+this.state.output+'</pre>');
+ this.setState({
+        output: docs 
+    });
+}
+
+empty(){
+  //$('#out').empty();
+  //$('#out').html('<pre>'+'</pre>');
+
+ return this.setState({
+        output: ''
     });
 }
 
@@ -99,6 +111,7 @@ instructions(){
            <textarea  rows="6" cols="100" value={this.state.input} onChange={this.handleChange}>  </textarea>
            <button className='btn btn-primary' style={{margin:'2% 2%'}} onClick={this.convert_to_html}> Convert to Html </button>
            <button className='btn btn-primary' style={{margin:'2% 2%'}} onClick={this.instructions}> Instructions </button>
+           <button className='btn btn-primary' style={{margin:'2% 2%'}} onClick={this.empty}> Empty outPut box </button>
            <h2>Output</h2>
            <div id="out"> <pre>{this.state.output}</pre>   </div>
        </div>
