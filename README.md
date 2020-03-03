@@ -4,7 +4,7 @@ it is a simple program.
 Maybe some improvments will happen in future.
 
 ## live version 
-[live MarkDown Previewer](https://markdown-previewer--ahmadali5.repl.co/)
+https://markdownpreviewer--ahmadali5.repl.co/
 
 ## Instructions: 
 <pre>
@@ -20,3 +20,10 @@ Maybe some improvments will happen in future.
 <li>> use ![] for image tag ex: [img_url]  => <img src="img_url" alt="<img src='img_url'/>"/></li>
 </ul>
 </pre>
+
+## video :
+[![MarkDown preview](http://img.youtube.com/vi/Qcp7A_6DleI/0.jpg)](http://www.youtube.com/watch?v=Qcp7A_6DleI "MarkDown preview")
+
+
+##my portfolio:
+http://www.ahmad-ali.co.uk/
